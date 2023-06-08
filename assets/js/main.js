@@ -6,6 +6,10 @@
   jQuery(window).on("load", function () {
     jQuery(".preloader").fadeOut("slow");
   });
+  /*-------------------------------------------
+    js WOW activation
+    --------------------------------------------- */
+    new WOW().init();
 
   /*-------------------------------------------
   Sticky Header

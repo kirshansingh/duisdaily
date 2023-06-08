@@ -418,6 +418,7 @@ scrollUp
 }
 .footer-area .footer-widget .menu-widget ul li a:hover {
   color: var(--primary-color);
+  text-decoration: underline;
 }
 .footer-area .footer-widget .subscribe-widget {
   background-color: var(--white);

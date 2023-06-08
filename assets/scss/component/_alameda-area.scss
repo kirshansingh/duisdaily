@@ -1,0 +1,62 @@
+/*===============================
+#.alameda-area
+ ==============================*/
+.alameda-area {
+  .table {
+    border-collapse: separate;
+    th,
+    td {
+      border: 1px solid #e9e4fb;
+      border-collapse: separate;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+      padding: 1rem;
+    }
+    th {
+      background-color: var(--Color1);
+      color: var(--white);
+      &:first-child {
+        border-radius: 1rem 0 0 0;
+      }
+      &:last-child {
+        border-radius: 0 1rem 0 0;
+      }
+    }
+    td {
+      color: var(--bColor);
+    }
+  }
+}
+.get-started-btn {
+  display: inline-flex;
+  padding: 0.6rem 1rem;
+  border-radius: 3rem;
+  background: var(--secondary-color);
+  align-items: center;
+  grid-column-gap: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--white);
+  transition: $transition;
+  justify-content: center;
+  min-width: 10.5rem;
+  &:hover {
+    color: var(--white);
+    background: var(--primary-color);
+  }
+}
+.btn-list {
+  flex-flow: row wrap;
+  grid-gap: 1rem;
+}
+@media (max-width: 575px) {
+  .btn-list {
+    grid-gap: 0.5rem;
+    .btn {
+      font-size: 13px;
+      padding: 13px 15px;
+    }
+  }
+}

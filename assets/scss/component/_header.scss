@@ -1,0 +1,90 @@
+/*===============================
+#.header-area
+ ==============================*/
+.header-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 2rem 0;
+  transition: all 0.2s ease-in-out;
+  &.stick {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 0;
+    background-color: #fafafa;
+  }
+  .navbar-brand {
+    img {
+      max-width: 12rem;
+    }
+  }
+  .navbar-nav {
+    grid-column-gap: 3.5rem;
+    grid-row-gap: .5rem;
+    .nav-item {
+      .nav-link {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: var(--Color1);
+        padding: 0;
+        padding: 1rem 0;
+        transition: $transition;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 1px;
+          background-color: var(--primary-color);
+          left: 0;
+          bottom: 0;
+          transition: $transition;
+        }
+        &:hover {
+          color: var(--primary-color);
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+      &.current-menu-item {
+        .nav-link {
+          color: var(--primary-color);
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.navbar-toggler {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+@media (max-width: 991px) {
+  .header-area .navbar-nav {
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    background-color: #fafafa;
+    border-radius: 1rem;
+  }
+  .header-area {
+    padding: 1rem 0;
+  }
+}

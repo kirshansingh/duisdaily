@@ -1,0 +1,58 @@
+/*
+------------- Table of content ----------------
+
+Template Name: duisdaily  Responsive  HTML5 Template
+Template URI: https://duisdaily.com/
+Description: duisdaily  Responsive  HTML5 Template
+Author: Gobinda Sarkar
+Author URI: https://duisdaily.com/
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+#.header-area
+#.footer-area
+#.hero-banner
+#.section-title
+#.service-area
+#.difference-area
+#.pricing-payments
+#.testimonial-area
+#.breadcrumb-area
+#.price-area
+#.icon-box-item
+#.contact-area
+#.alameda-area
+#.modal
+
+
+
+
+*/
+
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "component/header";
+@import "component/footer-area";
+@import "component/hero-banner";
+@import "component/buttons";
+@import "component/section-title";
+@import "component/service-area";
+@import "component/difference-area";
+@import "component/pricing-payments";
+@import "component/testimonial-area";
+@import "component/breadcrumb-area";
+@import "component/price-area";
+@import "component/icon-box-item";
+@import "component/contact-area";
+@import "component/alameda-area";
+@import "component/modal";

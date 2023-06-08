@@ -1,0 +1,25 @@
+/*===============================
+#.section-title
+ ==============================*/
+.section-title {
+  .sub-title {
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  .title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--Color1);
+  }
+}
+.title-space {
+  margin-bottom: 5rem;
+}
+@media (max-width: 767px) {
+  .section-title .title {
+    font-size: 3rem;
+  }
+}

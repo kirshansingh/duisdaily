@@ -1,0 +1,93 @@
+/*===============================
+#.hero-banner
+ ==============================*/
+.hero-banner {
+  background: url("../images/hero-banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 22rem 0 12rem 0;
+  .banner-title {
+    margin-bottom: 3rem;
+    font-size: 5.2rem;
+    font-weight: 700;
+    color: var(--Color1);
+  }
+  .banner-content {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #888888;
+  }
+  .banner-search {
+    margin-bottom: 4rem;
+    .form-group {
+      position: relative;
+      .form-controls {
+        width: 100%;
+        height: 5rem;
+        border-radius: 1rem;
+        background: var(--white);
+        border: none;
+        padding: 1rem 2rem 1rem 5rem;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        color: var(--bColor);
+      }
+      .search-icon {
+        position: absolute;
+        left: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+    p {
+      text-align: center;
+      margin-bottom: 0;
+      margin-top: 2rem;
+    }
+  }
+  .banner-btn-group {
+    display: flex;
+    grid-column-gap: 3rem;
+    grid-row-gap: 1rem;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1199px) {
+  .hero-banner .banner-title {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 991px) {
+  .hero-banner {
+    background: #f7fbff;
+    padding: 16rem 0 10rem 0;
+    text-align: center;
+  }
+  .hero-banner .banner-content {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  .hero-banner .banner-title {
+    font-size: 3.2rem;
+  }
+  .hero-banner .banner-search {
+    margin-bottom: 3rem;
+  }
+  .hero-banner .banner-search p {
+    font-size: 1.4rem;
+  }
+  .hero-banner .banner-search .form-group .form-controls {
+    font-size: 1.4rem;
+  }
+  .hero-banner .banner-search .form-group .search-icon {
+    left: 1.5rem;
+  }
+}

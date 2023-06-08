@@ -1,0 +1,73 @@
+.modal {
+    .modal-content {
+        border-radius: 3rem;
+        padding: 3rem;
+        .btn-close {
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            z-index: 6;
+        }
+    }
+    .modal-top {
+        margin-bottom: 3rem;
+        .guarantee-image {
+            margin: 0 auto;
+            max-width: 200px;
+            margin-bottom: 2rem;
+        }
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: var(--Color1);
+        }
+        p {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--bColor);
+        }
+        h4 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: var(--Color1);
+        }
+        .payment-area {
+            img {
+                max-width: 220px;
+            }
+        }
+    }
+    .modal-form-wrap {
+        .form-control {
+            width: 100%;
+            height: 5rem;
+            border-radius: 1rem;
+            border: 1px solid #DDDDDD;
+            padding: 1.5rem 2rem;
+            font-family: $bodyFont;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--bColor);
+        }
+    }
+    .form-bottom-text {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--bColor);
+        a {
+            color: var(--bColor);
+            transition: $transition;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .modal {
+        .modal-content {
+            padding: 3rem 2rem;
+        }
+    }
+}

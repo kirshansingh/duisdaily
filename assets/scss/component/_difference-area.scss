@@ -1,0 +1,46 @@
+/*===============================
+#.difference-area
+ ==============================*/
+.difference-area {
+  .difference-item {
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    transition: $transition;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:nth-child(even) .icon {
+        color: #51B56D;
+        background-color: rgba(81, 181, 109, 0.1);
+    }
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 85px;
+      width: 85px;
+      text-align: center;
+      border-radius: 8px;
+      color: #917aeb;
+      background-color: rgba(145, 122, 235, 0.1);
+      font-size: 3.2rem;
+    }
+    .difference-info {
+      flex: 1;
+      h3 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: var(--Color1);
+      }
+      p {
+        margin: 0;
+        font-size: 1.6rem;
+        color: var(--bColor);
+      }
+    }
+    &:hover {
+      box-shadow: 0px 25px 65px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

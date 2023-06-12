@@ -321,26 +321,60 @@
             <h4 class="mb-0">This is one time purchase for $1.00. You will receive this immediately after securely
               submitting your
               payment information below:</h4>
-            <div class="mt-4 payment-area text-start">
-              <img src="assets/images/payment.png" alt="payment">
+            <div class="mt-4 payment-area text-center">
+              <img src="assets/images/visa-card.png" alt="payment">
+              <img src="assets/images/mastercard-card.png" alt="payment">
+              <img src="assets/images/american-express-card.png" alt="payment">
+              <img src="assets/images/discover-card.png" alt="payment">
             </div>
           </div>
           <div class="modal-form-wrap">
             <form action="#">
               <div class="mb-4">
-                <input class="form-control" type="text" placeholder="0000 0000 0000 0000">
-              </div>
-              <div class="mb-4">
-                <input class="form-control" type="text" placeholder="What Is Your Security Code?">
+                <input class="form-control" type="text" placeholder="XXXX XXXX XXXX XXXX">
               </div>
               <div class="mb-4">
                 <input class="form-control" type="text" placeholder="Card Holder Name">
               </div>
-              <div class="mb-4">
-                <input class="form-control" type="text" placeholder="Expiration Month">
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <select required="required" class="form-control" aria-required="true" autocomplete="cc-exp-month">
+                    <option value="">Expiration Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select required="required" class="form-control" aria-required="true" autocomplete="cc-exp-year">
+                    <option value="">Expiration Year</option>
+                    <option selected="selected" value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                    <option value="2035">2035</option>
+                  </select>
+                </div>
               </div>
               <div class="mb-4">
-                <input class="form-control" type="text" placeholder="2023">
+                <input class="form-control" type="text" placeholder="What Is Your Security Code?">
               </div>
               <button class="btn btn-secondary w-100" type="submit">Submit</button>
             </form>

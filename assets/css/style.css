@@ -1486,3 +1486,7 @@ scrollUp
     padding: 3rem 2rem;
   }
 }
+.form-check-input:checked {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
